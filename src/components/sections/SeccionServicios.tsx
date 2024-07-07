@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function SeccionServicios() {
     return (
-        <Box w={'100%'} paddingBlock={'80px'} bg={'white'}>
+        <Box w={'100%'} paddingBlock={'80px'} bg={'white'} id='servicios'>
             <Container maxW={'6xl'} h={'inherit'} >
                 
                     <Box w={'inherit'} h={'auto'} textAlign={'center'}>
@@ -13,7 +13,7 @@ export default function SeccionServicios() {
                             <Divider border={'1px'} w={'50px'} color={'orange.500'}/>
                         </Flex>
                         <Text fontSize={'2xl'} fontWeight={400} lineHeight={'50px'} mb={'50px'}>Nos especializamos en tres áreas clave</Text>
-                        <SimpleGrid spacing={4} columns={3}>
+                        <SimpleGrid spacing={4} columns={{base:1, md:1, lg:3}}>
                             <Card boxShadow={'xl'}>
                                 <CardHeader>
                                     <Text fontSize='2xl' fontWeight={500}>Preparación y Desarrollo para la Exportación</Text>
