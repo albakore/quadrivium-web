@@ -1,4 +1,4 @@
-import { Box, Button, Center, Container, Heading, Image, Text } from '@chakra-ui/react'
+import { Box, Button, Center, Container, Heading, Image, Link, Text } from '@chakra-ui/react'
 import React from 'react'
 
 export default function SeccionHero() {
@@ -15,7 +15,11 @@ export default function SeccionHero() {
               Nuestro objetivo es impulsar el crecimiento de las economías regionales a través de la exportación,
               ofreciendo un servicio integral que abarca desde la producción hasta la distribución en mercados internacionales.
             </Text>
-            <Button mt={5} colorScheme='gray' size={'lg'}>Contactanos</Button>
+            <Button mt={5} colorScheme='gray' size={'lg'}
+            as={Link}
+            href='https://wa.me/5491139200322?text=Hola, me comunico desde la pagina web de Quadrivium SRL y estoy interesado en que me contacten.'
+            isExternal
+            >Contactanos</Button>
           </Box>
         </Center>
       </Container>
